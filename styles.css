@@ -1,0 +1,134 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1a0000, #a900ff);
+  color: #fff;
+}
+
+.container {
+  padding: 15%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+#mode-select {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 1rem;
+  background: #ffffff22;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 12px;
+}
+ .mode-selectLabel{
+  left: 41%;
+  position: relative;
+}
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.btn-group button {
+  padding: 15px 30px;
+  background: #ffffff22;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-group button:hover {
+  background: #ffffff55;
+}
+
+.card-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.card {
+  background: #ffffff11;
+  border: 1px solid #ffffff44;
+  border-radius: 16px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 20px;
+}
+
+
+#barChart, #pieChart {
+  display: none;
+}
+
+
+canvas {
+  background: #ffffff11; 
+  border-radius: 12px;
+  padding: 10px;
+  border: 2px solid #fff; 
+}
+
+.chartjs-tooltip {
+  color: #fff !important;
+  background-color: rgba(0, 0, 0, 0.7) !important; 
+}
+
+.chartjs-legend {
+  color: #fff !important; 
+}
+
+select {
+  background-color: #333;
+  color: #fff; 
+  border: 1px solid #fff; 
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  width: 200px; 
+  cursor: pointer;
+}
+
+select.dropdown option {
+  background-color: #333; 
+  color: #fff; 
+}
+
+select.dropdown:focus {
+  outline: none; 
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.5); 
+}
