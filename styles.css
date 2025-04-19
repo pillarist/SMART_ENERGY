@@ -8,9 +8,12 @@ body {
 }
 
 .container {
-  padding: 15%;
+  
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+  padding-top: 5%;   /* reduced from 15% */
+  padding-bottom: 2%;
+
 }
 
 h1 {
@@ -83,12 +86,7 @@ h1 {
   margin: 5px 0;
 }
 
-.charts {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  padding: 20px;
-}
+
 
 
 #barChart, #pieChart {
@@ -132,3 +130,17 @@ select.dropdown:focus {
   outline: none; 
   box-shadow: 0 0 8px rgba(0, 255, 255, 0.5); 
 }
+.charts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+canvas {
+  background: rgba(255,255,255,0.05);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+
