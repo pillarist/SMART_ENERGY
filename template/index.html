@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Home Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Device Dashboard</h1>
+
+    <!-- Mode selection dropdown -->
+    <label for="mode-select" class="mode-selectLabel">Choose display mode:</label>
+    <select id="mode-select" class="dropdown">
+      <option value="bar">Bar Graph</option>
+      <option value="pie">Pie Chart</option>
+      <option value="grid">Grid View</option>
+    </select>
+
+    <!-- Buttons for data loading -->
+    <div class="btn-group">
+      <button onclick="loadData(1)">📺 TV</button>
+      <button onclick="loadData(2)">🌀 Fan</button>
+      <button onclick="loadData(3)">🧊 Fridge</button>
+    </div>
+
+    <!-- Data cards container -->
+    <div class="card-grid" id="data-container"></div>
+
+    <!-- Charts -->
+    <div class="charts">
+      <canvas id="barChart"></canvas>
+      <canvas id="pieChart"></canvas>
+    </div>
+
+    <h2 style="color:white; margin-top: 40px;">Monthly Energy Usage</h2>
+    <div class="charts">
+      <canvas id="combinedChart" height="300"></canvas>
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
